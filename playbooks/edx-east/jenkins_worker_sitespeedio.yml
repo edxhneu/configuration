@@ -18,4 +18,5 @@
     - roles/xserver/defaults/main.yml
     - roles/forum/defaults/main.yml
   roles:
+    - aws
     - jenkins_worker

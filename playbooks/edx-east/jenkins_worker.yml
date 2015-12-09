@@ -18,6 +18,7 @@
     - roles/xserver/defaults/main.yml
     - roles/forum/defaults/main.yml
   roles:
+    - aws
     - mysql
     - edxlocal
     - mongo
