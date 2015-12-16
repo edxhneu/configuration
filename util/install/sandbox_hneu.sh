@@ -54,10 +54,6 @@ if [ -n "$OPENEDX_RELEASE" ]; then
 	-e EDXAPP_CMS_NGINX_PORT=18010 \
 	-e EDXAPP_LMS_NGINX_PORT=80 \
 	-e EDXAPP_SITE_NAME=edx1.hneu.net \
-	-e edxapp_use_custom_theme=true \
-	-e edxapp_theme_name=mycustomtheme \
-	-e edxapp_theme_source_repo=git://github.com/edxhneu/edx-theme.git \
-	-e edxapp_theme_version=HEAD \
   "
   CONFIG_VER=$OPENEDX_RELEASE
 else
