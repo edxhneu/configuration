@@ -48,6 +48,16 @@ if [ -n "$OPENEDX_RELEASE" ]; then
     -e forum_version=$OPENEDX_RELEASE \
     -e xqueue_version=$OPENEDX_RELEASE \
     -e configuration_version=$OPENEDX_RELEASE \
+	-e EDXAPP_LMS_BASE=edx1.hneu.net \
+	-e EDXAPP_PREVIEW_LMS_BASE=preview.edx1.hneu.net \
+	-e EDXAPP_LMS_PREVIEW_NGINX_PORT=80 \
+	-e EDXAPP_CMS_NGINX_PORT=18010 \
+	-e EDXAPP_LMS_NGINX_PORT=80 \
+	-e EDXAPP_SITE_NAME=edx1.hneu.net \
+	-e edxapp_use_custom_theme=true \
+	-e edxapp_theme_name=mycustomtheme \
+	-e edxapp_theme_source_repo=git://github.com/edxhneu/edx-theme.git \
+	-e edxapp_theme_version=HEAD \
   "
   CONFIG_VER=$OPENEDX_RELEASE
 else
