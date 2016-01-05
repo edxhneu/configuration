@@ -56,6 +56,14 @@ cd /var/tmp/configuration
 sudo pip install -r requirements.txt
 
 ##
+## Get configuratuon
+##
+cd /var/tmp/
+wget -O server-vars.yml https://raw.githubusercontent.com/edxhneu/configuration/named-release/cypress-hneu/util/install/server-vars.yml
+
+##
 ## Run the edx_sandbox.yml playbook in the configuration/playbooks directory
 ##
-cd /var/tmp/configuration/playbooks && sudo ansible-playbook -c local ./edx_sandbox.yml -i "localhost," $EXTRA_VARS
+cd /var/tmp/configuration/playbooks && sudo ansible-playbook -c local ./edx_sandbox.yml -i "localhost," -e@/var/tmp/server-vars.yml
+
+cp /var/tmp/server-vars.yml /edx/app/edx_ansible/server-vars.yml
