@@ -74,8 +74,8 @@ EDXAPP_LMS_SITE_NAME: "edx1.hneu.net"
 # Stanford, for example, uses edxapp_theme_name: 'stanford'
 #
 # TODO: change variables to ALL-CAPS, since they are meant to be externally overridden
-#edxapp_use_custom_theme: false
-#edxapp_theme_name: 'default'
+edxapp_use_custom_theme: false
+edxapp_theme_name: 'default'
 #edxapp_theme_source_repo: 'https://{{ COMMON_GIT_MIRROR }}/Stanford-Online/edx-theme.git'
-#edxapp_theme_source_repo: ''
-#edxapp_theme_version: 'HEAD'
+edxapp_theme_source_repo: 'https://github.com/Stanford-Online/edx-theme.git'
+edxapp_theme_version: 'HEAD'
