@@ -19,7 +19,7 @@ xqueue_version: 'named-release/cypress'
 EDXAPP_PLATFORM_NAME: 'ХНЕУ им С. Кузнеця'
 
 #EDXAPP_TIME_ZONE: 'America/New_York'
-EDXAPP_TIME_ZONE: 'Ukraine/Kiev'
+EDXAPP_TIME_ZONE: 'Europe/Kiev'
 EDXAPP_LANG: 'en_US.UTF-8'
 EDXAPP_LANGUAGE_CODE : 'ru'
 
